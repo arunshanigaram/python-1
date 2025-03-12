@@ -1,11 +1,11 @@
-import sys
 import os
+import sys
+import pytest  # Standard library and third-party imports should come first
 
 # Add the parent directory (project root) to sys.path so Python can find app.py
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-import pytest
-from app import app
+from app import app  # Local imports should come last
 
 
 @pytest.fixture

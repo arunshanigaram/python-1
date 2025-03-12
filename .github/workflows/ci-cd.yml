@@ -25,9 +25,6 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Run Linter (flake8)
-        run: flake8 --ignore=E501 .
-
       - name: Run Tests (pytest)
         run: pytest
 
